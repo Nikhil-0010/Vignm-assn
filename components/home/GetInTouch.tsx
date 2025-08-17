@@ -23,7 +23,7 @@ export default function GetInTouch() {
           Ready to Bring Your Ideas to Life ?
         </h2>
         <p className="text-sm text-center max-w-lg">
-          Transform your ideas into interactive experiences. Whether it's for education, research, or creative exploration, our platform turns text into dynamic simulations across any topic. Reach out to see how we can bring your concepts to life with the power of simulation.
+          Transform your ideas into interactive experiences. Whether it&apos;s for education, research, or creative exploration, our platform turns text into dynamic simulations across any topic. Reach out to see how we can bring your concepts to life with the power of simulation.
         </p>
       </div>
       <button className="text-xs flex items-center gap-1 text-blue-700 bg-white px-6 py-3 rounded">

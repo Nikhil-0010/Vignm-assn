@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowRight, Book, Brackets, Dot, Globe, StepForward, Waves } from "lucide-react";
+import { ArrowRight, Book, Brackets, Dot, Globe, Waves } from "lucide-react";
 import Image from "next/image";
 
 export default function AboutSection() {
@@ -115,7 +115,7 @@ export default function AboutSection() {
                 </p>
                 <p>
                 We believe in democratizing simulation technology, making it available for anyone to learn, experiment, and innovate.
-                Whether you're a student, educator, or innovator, our tools help you bring scenarios to life with just a few words.
+                Whether you&apos;re a student, educator, or innovator, our tools help you bring scenarios to life with just a few words.
                 Every simulation is crafted for clarity, engagement, and real-world relevance.
                 Our commitment to continuous improvement ensures that our simulations stay at the forefront of accuracy and usability.
                 
