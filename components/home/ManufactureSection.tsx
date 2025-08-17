@@ -12,7 +12,7 @@ interface ModelCardProps {
 
 const ModelCard : React.FC<ModelCardProps> = ({ name, category, img, parts, theme }) => {
     return (
-        <div className="relative bg-gray-100 h-96 w-full p-4 rounded-md">
+        <div className="relative bg-gray-100 h-96 w-full p-4 px-6 rounded-md">
             <div className='flex py-2 border-b border-b-gray-300 justify-between'>
                 <span className="font-semibold">{name}</span>
                 <ArrowRight className="inline-block w-4 h-4" />
@@ -41,7 +41,7 @@ const ModelCard : React.FC<ModelCardProps> = ({ name, category, img, parts, them
     )
 }
 export default function ManufactureSection() {
-    const models = [
+    const models: ModelCardProps[] = [
         {
             name: "Electric Motor",
             category: "Electronics",
@@ -78,11 +78,11 @@ export default function ManufactureSection() {
           <Dot className="inline-block w-4 h-4" /> Manufacturing{" "}
           <Dot className="inline-block w-4 h-4" />{" "}
         </h3>
-        <h1 className="text-4xl lg:text-6xl text-center tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center tracking-tight">
           The Most Popular <br /> Models We Produce
         </h1>
       </div>
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-1">
         {models.map((model) => (
           <ModelCard key={model.name} {...model} />
         ))}

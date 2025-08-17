@@ -44,7 +44,7 @@ const NavLinks: React.FC<{ onClick?: () => void, isMobile?: boolean }> = ({ onCl
     <Link href="#manufacture" onClick={onClick}>
       <span className="border-b">Manufacture</span>
     </Link>
-    <Link href="#" onClick={onClick}>
+    <Link href="#portfolio" onClick={onClick}>
       <span className="border-b">Tool Library</span>
     </Link>
     <Link href="#getInT" onClick={onClick}>

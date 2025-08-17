@@ -16,7 +16,6 @@ export default function Home() {
     <PortfolioSection />
     <GetInTouch />
     <ManufactureSection />
-    {/* <ToolLibrary /> */}
     </>
   );
 }

@@ -1,11 +1,19 @@
 "use client";
 import React, { useState } from "react";
+import type { JSX } from "react";
 import { ArrowRight, Book, Brackets, Dot, Globe, Waves } from "lucide-react";
 import Image from "next/image";
 
+interface ListItem {
+  num: string;
+  value: string;
+  icon: JSX.Element;
+  img: string;
+}
+
 export default function AboutSection() {
   const [isElHoverIdx, setIsElHoverIdx] = useState<number | null>(null);
-  const list = [
+  const list: ListItem[] = [
     {
       num: "01.",
       value: "Custom Simulations",
@@ -40,7 +48,7 @@ export default function AboutSection() {
             <Dot className="inline-block w-4 h-4" /> About{" "}
             <Dot className="inline-block w-4 h-4" />{" "}
           </h3>
-            <h1 className="text-4xl lg:text-6xl tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
             Transforming Ideas <br /> Into Interactive Simulations
             </h1>
         </div>
@@ -87,7 +95,7 @@ export default function AboutSection() {
         </div>
       </div>
       {/* right */}
-      <div className="w-full lg:w-1/2 pr-12 flex justify-end">
+      <div className="w-full lg:w-1/2 pr-12 flex justify-center lg:justify-end">
         <div className="w-full max-w-sm lg:w-1/2 border-l-[1.4px] border-stone-100 h-full px-4 flex flex-col gap-8 lg:gap-0 lg:justify-between">
           <div className="flex flex-col gap-6">
             <div className="flex gap-6 items-center w-full">

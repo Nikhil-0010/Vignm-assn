@@ -39,7 +39,7 @@ const ImageContainer: React.FC<{ imageUrl: string, pos:string }> = ({ imageUrl, 
 };
 
 export default function ProcessSection() {
-  const imageOverlay = [
+  const imageOverlays: ImageOverlay[] = [
     {
       title: "Enter Your Idea",
       description: (
@@ -89,14 +89,14 @@ export default function ProcessSection() {
             <Dot className="inline-block w-4 h-4" /> Process{" "}
             <Dot className="inline-block w-4 h-4" />{" "}
           </h3>
-          <h1 className="text-4xl lg:text-6xl tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
             Visualising Ideas <br /> Made Easy
           </h1>
         </div>
       </div>
       <div className="flex flex-col gap-8">
         <div className="w-full grid grid-cols-4 gap-1">
-          {imageOverlay.map((overlay, index) => (
+          {imageOverlays.map((overlay, index) => (
             <ImageTextOverlay key={index} imageOverlay={overlay} />
           ))}
         </div>

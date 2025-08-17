@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useRef, useState, useCallback, JSX } from "react";
 import Hls from "hls.js";
 import { ArrowUpRight, AudioLines, Pause, Play } from "lucide-react";
 import Link from "next/link";
@@ -26,7 +26,7 @@ const CustomHlsPlayer: React.FC<CustomHlsPlayerProps> = ({
   src,
   width = "100%",
   height = "auto",
-}) => {
+}) : JSX.Element => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const hlsRef = useRef<Hls | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -239,7 +239,7 @@ const CustomHlsPlayer: React.FC<CustomHlsPlayerProps> = ({
   );
 };
 
-export default function VideoSection() {
+export default function VideoSection(): JSX.Element {
   return (
     <CustomHlsPlayer src="https://pub-e96800ca55df4b1592a33fc671df0721.r2.dev/vignam_video_hls/master.m3u8" />
   );

@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <section className="hero-section p-4 h-full bg-white bg-[radial-gradient(rgba(229,231,235,0.36)_1px,transparent_0.2px)] [background-size:8px_8px]">
       <div className="hero-content text-center flex flex-col mt-20 space-y-4 justify-between">
-        <h1 className="text-4xl lg:text-6xl tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
           Text to Simulations <br />
           Simulate Anything  <br /> Instantly <br />
         </h1>

@@ -27,7 +27,7 @@ const MotorModel = () => {
 
 export default function ThreeDModal() {
   return (
-    <div className="w-full h-48 lg:h-72 ">
+    <div className="w-full h-48 md:h-56 lg:h-72 ">
       <Canvas>
         <Environment files="./models/forest.exr" background={false} />
           <MotorModel />

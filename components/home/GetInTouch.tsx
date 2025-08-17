@@ -19,7 +19,7 @@ export default function GetInTouch() {
         />
       </svg>
       <div className="flex flex-col space-y-2 items-center justify-center">
-        <h2 className="text-2xl text-center md:text-3xl font-semibold">
+        <h2 className="text-2xl tracking-tight text-center md:text-3xl font-semibold">
           Ready to Bring Your Ideas to Life ?
         </h2>
         <p className="text-sm text-center max-w-lg">
