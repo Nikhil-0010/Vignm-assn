@@ -90,7 +90,7 @@ export default function ProcessSection() {
             <Dot className="inline-block w-4 h-4" />{" "}
           </h3>
           <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
-            Visualising Ideas <br /> Made Easy
+            Visualising Ideas <br /> Made <span className="shiny-text pr-2">Easy</span>
           </h1>
         </div>
       </div>

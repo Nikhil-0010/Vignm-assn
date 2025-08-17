@@ -72,7 +72,7 @@ export default function PortfolioSection() {
           <Dot className="inline-block w-4 h-4" />{" "}
         </h3>
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">
-          Check Our <br /> Latest Simulations
+          Check Our <br /> Latest  <span className="shiny-text pr-1">Simulations</span>
         </h1>
       </div>
       <div className="border-t-[1.4px] border-stone-700 pt-4 flex flex-col gap-8 lg:gap-0 lg:flex-row justify-between">

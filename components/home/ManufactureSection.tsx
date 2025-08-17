@@ -79,7 +79,7 @@ export default function ManufactureSection() {
           <Dot className="inline-block w-4 h-4" />{" "}
         </h3>
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center tracking-tight">
-          The Most Popular <br /> Models We Produce
+          The Most Popular <br /> <span className="shiny-text pr-1">Models</span> We Produce
         </h1>
       </div>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-1">
