@@ -49,7 +49,7 @@ export default function AboutSection() {
             <Dot className="inline-block w-4 h-4" />{" "}
           </h3>
             <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-tight">
-            Transforming Ideas <br /> Into Interactive Simulations
+            Transforming Ideas <br /> Into Interactive <span className="shiny-text pr-1">Simulations</span>
             </h1>
         </div>
         <div className="space-y-8">

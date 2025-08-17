@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 const LocationBlock: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => (
   <div className={`location flex gap-2 items-center ${isMobile ? 'text-base' : ''}`}>
     <svg
-      width="12px"
+      width={isMobile ? "16px": "12px"}
       height="100%"
       viewBox="0 0 20 20"
       version="1.1"

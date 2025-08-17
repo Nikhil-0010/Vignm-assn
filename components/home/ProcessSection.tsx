@@ -15,7 +15,7 @@ const ImageTextOverlay: React.FC<{ imageOverlay: ImageOverlay }> = ({
         <Upload className="hidden md:inline-block w-4 h-4 " />
         <h3 className="text-sm font-semibold">{imageOverlay.title}</h3>
       </div>
-      <p className="text-xs">{imageOverlay.description}</p>
+      <p className="text-xs max-h-20 overflow-hidden text-ellipsis whitespace-normal sm:max-h-full">{imageOverlay.description}</p>
     </div>
   );
 };
@@ -100,8 +100,8 @@ export default function ProcessSection() {
             <ImageTextOverlay key={index} imageOverlay={overlay} />
           ))}
         </div>
-        <div className="grid grid-cols-4 w-full gap-1 h-56 md:h-80 relative">
-          {['left', '25%', '50%', '75%'].map((position) => (
+        <div className="grid grid-cols-4 w-full gap-1 h-44 sm:h-56 md:h-80 relative">
+          {['left', '25%', '56%', '88%'].map((position) => (
             <ImageContainer key={position} imageUrl={`https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80`} pos={position} />
           ))}
         </div>
